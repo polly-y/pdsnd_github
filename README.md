@@ -1,4 +1,5 @@
 ### Explore US BikeShare Data
+Part of the 'Programming for Data Science with Python' course.
 
 ### Introduction
 In this project, I used Python to explore data related to bike share systems in three big cities: Chicago, New York City, and Washington.
