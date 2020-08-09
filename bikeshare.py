@@ -76,7 +76,7 @@ def load_data(city, month, day):
 
     return df
 
-def time_stats(df):
+def time_statistics(df):
     """Displays statistics on the most frequent times of travel."""
 
     print('\n*** Calculating The Most Frequent Times of Travel ***\n')
@@ -109,7 +109,7 @@ def time_stats(df):
     
     return most_common_month_int, most_common_day, most_common_hour
 
-def station_stats(df):
+def station_statistics(df):
     """Displays statistics on the most popular stations and trip."""
 
     print('\n*** Calculating The Most Popular Stations and Trip ***\n')
@@ -200,12 +200,12 @@ def user_stats(df):
 
 # As per comment, use a while loop, keep a counter of the number of rows printed and you can print the next five rows accordingly.
 def raw_data(df):
-    counter = 5
+    counter = 10
     while True:
         more_rows = input('\nWould you like to see (more) raw data behind these statistics? Type \'yes\' or \'no\':\n')
         if more_rows == 'yes':
             print(df.iloc[:counter])
-            counter += 5
+            counter += 10
             continue
         else:
             break
@@ -219,8 +219,8 @@ def main():
         if restart.lower() != 'yes':
             get_filters()
 
-        time_stats(df)
-        station_stats(df)
+        time_statistics(df)
+        station_statistics(df)
         trip_duration_stats(df)
         user_stats(df)
         raw_data(df)
