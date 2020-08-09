@@ -109,7 +109,7 @@ def time_stats(df):
     
     return most_common_month_int, most_common_day, most_common_hour
 
-def station_stats(df):
+def station_statistics(df):
     """Displays statistics on the most popular stations and trip."""
 
     print('\n*** Calculating The Most Popular Stations and Trip ***\n')
@@ -220,7 +220,7 @@ def main():
             get_filters()
 
         time_stats(df)
-        station_stats(df)
+        station_statistics(df)
         trip_duration_stats(df)
         user_stats(df)
         raw_data(df)
