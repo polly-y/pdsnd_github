@@ -6,4 +6,6 @@ In this project, I used Python to explore data related to bike share systems in 
 
 ### How to run
 The end goal of this project was to create an interactive experience in the terminal. Based on the user's input, different questions about the bike share systems were answered. 
+Try this for yourself:
+1) Place the bikeshare.py file and the three .csv files in the same folder. 
 
