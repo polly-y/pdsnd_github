@@ -200,12 +200,12 @@ def user_stats(df):
 
 # As per comment, use a while loop, keep a counter of the number of rows printed and you can print the next five rows accordingly.
 def raw_data(df):
-    counter = 5
+    counter = 10
     while True:
         more_rows = input('\nWould you like to see (more) raw data behind these statistics? Type \'yes\' or \'no\':\n')
         if more_rows == 'yes':
             print(df.iloc[:counter])
-            counter += 5
+            counter += 10
             continue
         else:
             break
